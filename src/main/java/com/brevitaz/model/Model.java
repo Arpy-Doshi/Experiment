@@ -1,9 +1,19 @@
 package com.brevitaz.model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class Model
 {
     private String id;
     private String name;
+    private String string1;
+    private Date fromDate = new SimpleDateFormat("dd-mm-yyyy", Locale.ENGLISH).parse(string1);
+
+    public Model() throws ParseException {
+    }
 
     public String getId() {
         return id;
