@@ -8,7 +8,7 @@ public class Model
     private String id;
     private String name;
     private String string1;
-    private Date fromDate ;
+    private Date fromDate ;// "2018-03-08T18:25:43"
     /*= new SimpleDateFormat("dd-mm-yyyy"*//*, Locale.ENGLISH*//*).parse(string1);
 */
     public Model() throws ParseException {
