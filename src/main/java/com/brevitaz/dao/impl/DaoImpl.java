@@ -36,14 +36,9 @@ public class DaoImpl implements Dao
         try {
            String json = config.getObjectMapper().writeValueAsString(model);
             request.source(json, XContentType.JSON);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-
-        try {
             IndexResponse indexResponse= config.getClient().index(request);
             System.out.println(indexResponse);
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
