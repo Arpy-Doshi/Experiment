@@ -14,9 +14,6 @@ public class Controller
 {
     @Autowired
     Dao dao;
-
-
-
     @RequestMapping(method = RequestMethod.POST)
     public boolean create(@RequestBody Model model)
     {
