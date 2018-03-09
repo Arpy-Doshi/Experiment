@@ -38,6 +38,7 @@ public class DaoImpl implements Dao
             request.source(json, XContentType.JSON);
             IndexResponse indexResponse= config.getClient().index(request);
             System.out.println(indexResponse);
+            System.out.println("hello");
         } catch (Exception e) {
             e.printStackTrace();
         }
